@@ -58,6 +58,24 @@ export default function PatientForm() {
           iconAlt="User icon"
         />
 
+        <CustomFormField
+          type={FormFieldType.INPUT}
+          control={form.control}
+          name="email"
+          label="Email"
+          placeholder="johndoe@johndoe.com"
+          iconSrc="/assets/icons/email.svg"
+          iconAlt="email icon"
+        />
+
+        <CustomFormField
+          type={FormFieldType.PHONE_INPUT}
+          control={form.control}
+          name="phone"
+          label="Phone Number"
+          placeholder="(555) 123-4567"
+        />
+
         <Button type="submit">Submit</Button>
       </form>
     </Form>
